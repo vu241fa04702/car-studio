@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    padding: 30px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+.logo {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero {
+    height: 100vh;
+    background: url("baa.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    margin-top: 80px;
+}
+
+.welcome {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    color: #ddd;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+.hero-button {
+    color: white;
+    border: 1px solid white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.services {
+    padding: 100px 8%;
+    text-align: center;
+    background: #111;
+}
+.section-heading p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #999;
+}
+.section-heading h2 {
+    margin-top: 12px;
+    font-size: 40px;
+}
+.services-container {
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.service-card {
+    max-width: 280px;
+}
+
+.service-card h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.service-card p {
+    color: #999;
+    line-height: 1.7;
+}
+.about {
+    min-height: 65vh;
+    padding: 100px 10%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("bgg.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content {
+    max-width: 550px;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #aaa;
+}
+
+.about h2 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.about-content p {
+    color: #ccc;
+    line-height: 1.7;
+}
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+    background: #111;
+}
+
+.contact h2 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: white;
+    border: 1px solid white;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .navbar {
+        padding: 25px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 11px;
+    }
+    .hero h1 {
+        font-size: 45px;
+    }
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about h2 {
+        font-size: 40px;
+    }
+}
